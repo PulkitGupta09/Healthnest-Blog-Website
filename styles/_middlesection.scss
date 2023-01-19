@@ -1,0 +1,101 @@
+.middlesection{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: max-content min-content max-content max-content;
+    // justify-items: center;
+    gap: 3rem 0rem;
+    
+    &__heading{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+    
+}
+
+.ftcontainer{
+    grid-row: 2 / 3;
+    grid-column: 1/-1;
+    justify-self: center;
+    position: relative;
+    &__img{
+        box-shadow: 0rem .4rem .8rem rgba(#000,.2);
+        z-index: 0;
+        filter: contrast(75%);
+        // filter: brightness(80%);
+        // opacity: 0.95;
+        // filter: hue-rotate(50%);
+        
+    }
+    &__text{
+        position: absolute;
+        bottom: 3rem;
+        left: 3rem;
+    }
+    &__namedate{
+        color: white;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-weight: 300;
+        text-shadow: 0rem .4rem .8rem rgba(#000,.2);
+    }
+    &__heading{
+        color: white;
+        font-size: 3rem; 
+        margin-bottom: 1rem;
+        font-weight: 400;
+        text-shadow: 0rem .4rem .8rem rgba(#000,.2);
+    }
+    &__desc{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 200;
+        text-shadow: 0rem .4rem .8rem rgba(#000,.2);
+    }
+}
+
+.sdcontainer{
+    justify-items: center;
+    // grid-row: 3 / 4;
+        grid-column: 2 / 8;
+        margin: 8rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32.64rem,1fr));
+        gap: 4rem 3rem;
+
+
+
+    &__card{
+        // background-color: rgb(37, 77, 112);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 32.64rem;
+        gap: .5rem 0;
+        
+
+        &__img{
+            grid-column: 1 / 5;
+            margin-bottom: 1.2rem;
+            
+        }
+
+        &_head4{
+            grid-column: 1/5;
+            color: $color-grey-dark-3;
+            font-size: 1.6rem;
+        }
+        &_head2{
+            grid-column: 1/5;
+            color: $color-grey-dark-1;
+            font-size: 2.4rem; 
+        }
+        &_head3{
+            grid-column: 1/5;
+            color: $color-grey-dark-4;
+            font-size: 1.6rem;
+            
+        }
+    }
+    
+}
+
