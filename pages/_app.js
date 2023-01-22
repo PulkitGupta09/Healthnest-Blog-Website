@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import styles from '@/styles/main.module.scss'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }) {
   return <>
@@ -8,11 +9,11 @@ export default function App({ Component, pageProps }) {
           Healthnest
         </div>
         <ul className={styles.list}>
-          <li className={styles.list__item}>Home</li>
-          <li className={styles.list__item}>About</li>
-          <li className={styles.list__item}>Shop</li>
-          <li className={styles.list__item}>Blog</li>
-          <li className={styles.list__item}>Contact</li>
+         <Link href="/" className={styles.list__item}><li>Home</li></Link>
+         <Link href="/about" className={styles.list__item}><li>About</li></Link> 
+         <Link href="/shop" className={styles.list__item}><li>Shop</li></Link> 
+         <Link href="/blog" className={styles.list__item}><li>Blog</li></Link>
+         <Link href="/contact" className={styles.list__item}><li>Contact</li></Link>
         </ul>
     </header>
    <Component {...pageProps} />
@@ -48,7 +49,7 @@ export default function App({ Component, pageProps }) {
                 International
             </li>
             <li className={styles.footer__list_item}>
-                Healthline Insider Newsletter
+                Healthnest Insider Newsletter
             </li>
             <li className={styles.footer__list_item}>
                 Careers
@@ -60,7 +61,7 @@ export default function App({ Component, pageProps }) {
         </div>
         <div className={styles.footer__column3}>
         <p className={styles.footer__column3_text1}>
-              &#169;2005-2022 Healthline Media a Red Ventures Company. 
+              &#169;2005-2022 Healthnesst Media a Red Ventures Company. 
         </p>
         <p className={styles.footer__column3_text2}>
               All rights reserved. Our website services, content, and products are for informational purposes only. Healthline Media does not provide     

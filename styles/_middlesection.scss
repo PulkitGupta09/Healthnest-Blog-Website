@@ -46,10 +46,15 @@
         font-weight: 400;
         text-shadow: 0rem .4rem .8rem rgba(#000,.2);
     }
+
+    &__heading:hover{
+        transition: all .3s;
+        color: $color-secondary;
+    }
     &__desc{
         color: white;
         font-size: 1.8rem;
-        font-weight: 200;
+        font-weight: 100;
         text-shadow: 0rem .4rem .8rem rgba(#000,.2);
     }
 }
@@ -78,7 +83,14 @@
             margin-bottom: 1.2rem;
             
         }
+        &_link{
+            text-decoration: none;
+            grid-column: 1 / 5;
+        }
 
+        &_head2:hover{
+            color: $color-primary;
+        }
         &_head4{
             grid-column: 1/5;
             color: $color-grey-dark-3;
@@ -88,6 +100,7 @@
             grid-column: 1/5;
             color: $color-grey-dark-1;
             font-size: 2.4rem; 
+            transition: all .3s;
         }
         &_head3{
             grid-column: 1/5;
