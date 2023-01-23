@@ -11,7 +11,6 @@ export default function App({ Component, pageProps }) {
         <ul className={styles.list}>
          <Link href="/" className={styles.list__item}><li>Home</li></Link>
          <Link href="/about" className={styles.list__item}><li>About</li></Link> 
-         <Link href="/shop" className={styles.list__item}><li>Shop</li></Link> 
          <Link href="/blog" className={styles.list__item}><li>Blog</li></Link>
          <Link href="/contact" className={styles.list__item}><li>Contact</li></Link>
         </ul>
