@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[800],{9173:function(n,u,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/shop",function(){return i(4073)}])},4073:function(n,u,i){"use strict";i.r(u);var s=i(5893);i(7294);let _=()=>(0,s.jsx)("div",{children:"This is shop page."});u.default=_}},function(n){n.O(0,[774,888,179],function(){return n(n.s=9173)}),_N_E=n.O()}]);

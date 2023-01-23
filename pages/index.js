@@ -15,13 +15,6 @@ export default function Home() {
       <section className={styles.middlesection}>
         <h1 className={`${styles.heading__primary} ${styles.mg__vlg} ${styles.middlesection__heading}`}>Popular Blogs from our team</h1>
         <div className={styles.ftcontainer}>
-        {/* <Image
-          className={styles.ftcontainer__img}
-          src="/img/yoga_md.jpg"
-          width={192*6}
-          height={128*5}
-          alt="yoga image"
-        /> */}
         <img className={styles.ftcontainer__img}
           src="/img/yoga_md.jpg"
           width={192*6}
@@ -35,13 +28,6 @@ export default function Home() {
         </div>
         <div className={styles.sdcontainer}>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/egg_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="egg image"
-        /> */}
         <img  className={styles.sdcontainer__card__img}
           src="/img/egg_sm.jpg"
           width={192*1.7}
@@ -52,13 +38,6 @@ export default function Home() {
         <h3 className={styles.sdcontainer__card_head3}>Eggs have been a dietary staple since time immemorial and there’s good reason for their continued presence in our menus and meals.</h3>
         </div>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/almonds_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="almonds img"
-        /> */}
         <img  className={styles.sdcontainer__card__img}
           src="/img/almonds_sm.jpg"
           width={192*1.7}
@@ -69,13 +48,6 @@ export default function Home() {
         <h3 className={styles.sdcontainer__card_head3}>Almonds are the clear winner when it comes to fiber and protein. They're also naturally low in sugars and are one of the lowest calorie nuts.</h3>
         </div>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/jooging_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="jogging img"
-        /> */}
         <img className={styles.sdcontainer__card__img}
           src="/img/jooging_sm.jpg"
           width={192*1.7}
@@ -86,14 +58,6 @@ export default function Home() {
         <h3 className={styles.sdcontainer__card_head3}>Jogging or running is a popular form of physical activity. About one in 5 Australians try running (or jogging) at some stage in their life.</h3>
         </div>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/lemon_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="lemon img"
-          priority="lazy loading"
-        /> */}
         <img className={styles.sdcontainer__card__img}
           src="/img/lemon_sm.jpg"
           width={192*1.7}
@@ -105,13 +69,6 @@ export default function Home() {
 They grow on lemon trees and are a hybrid of the original citron and lime.</h3>
         </div>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/strawberry_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="strawberry img"
-        /> */}
         <img className={styles.sdcontainer__card__img}
           src="/img/strawberry_sm.jpg"
           width={192*1.7}
@@ -122,13 +79,6 @@ They grow on lemon trees and are a hybrid of the original citron and lime.</h3>
         <h3 className={styles.sdcontainer__card_head3}>Strawberry is one of the most economically important berry fruits consumed for its nutrient content and pleasant flavor.</h3>
         </div>
         <div className={styles.sdcontainer__card}>
-        {/* <Image
-          className={styles.sdcontainer__card__img}
-          src="/img/oats_sm.jpg"
-          width={192*1.7}
-          height={128*1.7}
-          alt="oats img"
-        /> */}
         <img className={styles.sdcontainer__card__img}
           src="/img/oats_sm.jpg"
           width={192*1.7}

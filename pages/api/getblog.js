@@ -2,7 +2,6 @@
 import * as fs from 'node:fs';
 export default function handler(req, res) {
   fs.readFile(`blogdata/${req.query.slug}.json`,'utf-8',(err,data)=>{
-    // console.log(data);
     if(err){
         res.status(500).json({"error": "No such blog found"});
     }
