@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/api/postcontact": "pages/api/postcontact.js"
+  "/blog": "pages/blog.js",
+  "/api/blogsapi": "pages/api/blogsapi.js",
+  "/blogpost/[slug]": "pages/blogpost/[slug].js"
 }

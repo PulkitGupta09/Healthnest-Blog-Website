@@ -31,14 +31,13 @@ const Slug = (props) => {
 }
 
 export async function getStaticPaths() {
+  let allb = await fs.promises.readdir('blogdata')
+  allb = allb.map((item)=>{
+    return { params: { slug: item.split(".")[0] } }
+  })
+
   return {
-    paths: [{ params: { slug: 'All-about-almonds' } },
-     { params: { slug: 'Benefits-of-eating-eggs' } },
-     { params: { slug: 'Health-benefits-of-running' } },
-     { params: { slug: 'Lemons-nutrition-facts' } },
-     { params: { slug: 'Oats-and-oatmeal-guide' } },
-     { params: { slug: 'Strawberry-an-overview' } }
-    ],
+    paths: allb,
     fallback: true, // can also be true or 'blocking'
   }
 }
