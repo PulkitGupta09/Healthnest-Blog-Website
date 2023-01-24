@@ -1,20 +1,30 @@
 import '@/styles/globals.css'
 import styles from '@/styles/main.module.scss'
 import Link from 'next/link'
+import Script from 'next/script'
+import { useRef,useState } from 'react'
 
 export default function App({ Component, pageProps }) {
+  const [toggle, setToggle] = useState(false);
+
+
   return <>
     <header className={styles.mainnav}>
         <div className={styles.logo}>
-          Healthnest
+          Healthnest 
         </div>
-        <ul className={styles.list}>
+        <ul className={toggle ? `${styles.list} ${styles.list_active}` : `${styles.list}` } >
          <Link href="/" className={styles.list__item}><li>Home</li></Link>
          <Link href="/about" className={styles.list__item}><li>About</li></Link> 
          <Link href="/blog" className={styles.list__item}><li>Blog</li></Link>
          <Link href="/contact" className={styles.list__item}><li>Contact</li></Link>
         </ul>
     </header>
+    <div className={styles.hamburger} onClick = {()=>{setToggle(!toggle)}}>
+        <div className={toggle ? `${styles.div} ${styles.line1c}` : `${styles.div}`}></div>
+        <div className={toggle ? `${styles.div} ${styles.line2c}` : `${styles.div}`}></div>
+        <div className= {toggle ? `${styles.div} ${styles.line3c}` : `${styles.div}`}></div>
+    </div>
    <Component {...pageProps} />
    <footer className={styles.footer}>
         <div className={styles.footer__logo}>

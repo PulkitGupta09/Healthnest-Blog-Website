@@ -1,14 +1,21 @@
+
 .middlesection{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: max-content min-content max-content max-content;
     // justify-items: center;
     gap: 3rem 0rem;
+    @media only screen and (max-width: $bp-medium){
+         gap: 2rem 0rem;   
+    }
     
     &__heading{
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         justify-self: center;
+        // @media only screen and (max-width: $bp-medium){
+            
+        // }
     }
     
 }
@@ -22,6 +29,10 @@
         box-shadow: 0rem .4rem .8rem rgba(#000,.2);
         z-index: 0;
         filter: contrast(75%);
+        width: 100%;
+        @media only screen and (max-width: $bp-medium){
+            height: 100%;
+        }
         // filter: brightness(80%);
         // opacity: 0.95;
         // filter: hue-rotate(50%);
@@ -31,6 +42,10 @@
         position: absolute;
         bottom: 3rem;
         left: 3rem;
+        @media only screen and (max-width: $bp-medium){
+          bottom: 2rem;   
+          left: 2rem;
+        }
     }
     &__namedate{
         color: white;
@@ -59,6 +74,8 @@
     }
 }
 
+
+
 .sdcontainer{
     justify-items: center;
     // grid-row: 3 / 4;
@@ -68,19 +85,23 @@
         grid-template-columns: repeat(auto-fit, minmax(32.64rem,1fr));
         gap: 4rem 3rem;
 
-
+        @media only screen and (max-width: $bp-medium){
+            grid-column: 2 / 8;
+            justify-items: center;
+           }
 
     &__card{
         // background-color: rgb(37, 77, 112);
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        width: 32.64rem;
+        // width: 32.64rem;
         gap: .5rem 0;
         
 
         &__img{
             grid-column: 1 / 5;
             margin-bottom: 1.2rem;
+            width: 100%;
             
         }
         &_link{
@@ -112,3 +133,9 @@
     
 }
 
+
+// .sdcontainer__addblog{
+//     @media only screen and (max-width: $bp-medium){
+//         justify-items: start;
+//        }
+// }

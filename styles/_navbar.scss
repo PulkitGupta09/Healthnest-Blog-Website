@@ -2,6 +2,13 @@
     padding: 2rem 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 10;
+    @media only screen and (max-width: $bp-medium){
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 2rem 2rem;
+        
+    }
 }
 
 .logo{
@@ -9,6 +16,10 @@
     font-weight: 700;
     color: $color-grey-dark-2;
     padding: 1rem;
+    @media only screen and (max-width: $bp-medium){
+        justify-self: start;
+        
+    }
 }
 
 
@@ -17,14 +28,42 @@
     grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-items: end;
+    
+    
+    @media only screen and (max-width: $bp-medium){
+        // grid-template-columns: 1fr;
+        // grid-template-rows: repeat(4,10vh);
+        // gap: 3rem 0;
+        // display: none; 
+        // align-items: center;
+        // justify-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 92vh;
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        top: 10rem;
+        background-color: black;
+        transform: translateX(100%);
+        // visibility: hidden;
+        transition: transform .3s ease-in;   
+        z-index: 100;
+        }
 
-    &__item{
+    &__item{ 
         font-size: 16px;
         font-weight: 700;
         color: $color-grey-dark-2;
         list-style: none;
         text-decoration: none;
         padding: 1rem;
+
+
+        @media only screen and (max-width: $bp-medium){
+           text-align: center;
+            }
     }
 
     &__item::after{
@@ -41,4 +80,54 @@
             width: 100%;
         }
     }
+}
+
+
+
+// hamburger
+
+.line1c{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.line2c{
+    opacity: 0;
+}
+.line3c{
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+
+@media only screen and (max-width: $bp-medium){
+.hamburger div{
+    width: 2.5rem;
+    height: .3rem;
+    background-color: black;
+    margin: .5rem;
+    transition: all .3s;
+}
+    
+}
+
+
+@media only screen and (max-width: $bp-medium){
+    
+    
+}
+
+@media only screen and (max-width: $bp-medium){
+    .hamburger{
+        position: absolute;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+    .list__item{
+        color: white;
+    }
+}
+
+.list_active{
+    transform: translateX(0%);
+    // display: block;
+    // visibility: visible;
+    opacity: 1;
 }

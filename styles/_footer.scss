@@ -6,6 +6,12 @@
     padding: 5rem 10rem;
     align-items: center;
     align-content: center;
+    
+
+    @media only screen and (max-width: $bp-large){
+        padding: 5rem 6rem;
+        gap: 1rem 0;
+    }
 
     &__logo{
        grid-row: 1/2; 
@@ -38,6 +44,9 @@
         grid-template-columns: 1fr;
         gap: 1.5rem 0;
         
+        @media only screen and (max-width: $bp-large){
+            gap: 0rem 0;
+        }
         &_text1{
             color: $color-grey-light-1;
             
