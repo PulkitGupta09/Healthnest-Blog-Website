@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 10;
+    width: 100vw;
+    overflow-x: hidden;
     @media only screen and (max-width: $bp-medium){
         grid-template-columns: 1fr;
         justify-items: center;
@@ -29,7 +31,6 @@
     align-items: center;
     justify-items: end;
     
-    
     @media only screen and (max-width: $bp-medium){
         // grid-template-columns: 1fr;
         // grid-template-rows: repeat(4,10vh);
@@ -46,7 +47,7 @@
         right: 0px;
         top: 10rem;
         background-color: black;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         // visibility: hidden;
         transition: transform .3s ease-in;   
         z-index: 100;
@@ -87,20 +88,21 @@
 // hamburger
 
 .line1c{
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px,5px);
+    // translate(-5px,5px)
 }
 .line2c{
     opacity: 0;
 }
 .line3c{
-    transform: rotate(45deg) translate(-5px,-6px);
-
+    transform: rotate(45deg) translate(-5px,-5px);
+    // translate(-5px,-5px)
 }
 
 @media only screen and (max-width: $bp-medium){
 .hamburger div{
-    width: 2.5rem;
-    height: .3rem;
+    width: 25px;
+    height: 3px;
     background-color: black;
     margin: .5rem;
     transition: all .3s;
@@ -131,3 +133,7 @@
     // visibility: visible;
     opacity: 1;
 }
+
+// .wholecontainer{
+//     overflow-x: hidden;
+// }

@@ -20,6 +20,12 @@ html{
         font-size: 50%;
      }
 }
+/* @media only screen and (max-width: 400px){
+     html,body{
+        width: 100vw;
+        overflow-x: hidden;
+     }
+} */
 
 body{
     font-family: 'Sofia Sans Semi Condensed', sans-serif;;
@@ -33,8 +39,16 @@ body{
 }
 
 @media only screen and (max-width: 800px){
-    body{
+    html,body{
         overflow-x: hidden;
+        /* width: 100vw; */
     }
 }
 
+/* .wholecontainer{
+    width: 100vw;
+    overflow-x: hidden;
+} */
+/* .insidecontainer{
+    
+} */
