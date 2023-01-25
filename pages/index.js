@@ -23,7 +23,7 @@ export default function Home() {
           alt="yoga image"/>
         <div className={styles.ftcontainer__text}>
         <h4 className={styles.ftcontainer__namedate}>Olivia Rhye . 20 Jan 2023</h4>
-        <Link href="/about" className={styles.sdcontainer__card_link} > <h2 className={styles.ftcontainer__heading}>All About Yoga</h2></Link>
+        <Link href="/blogpost/All-about-yoga" className={styles.sdcontainer__card_link} > <h2 className={styles.ftcontainer__heading}>All About Yoga</h2></Link>
         <h3 className={styles.ftcontainer__desc}>Humans have been practicing yoga for thousands of years. And today millions of people practice dozens of styles, new and old.</h3>
         </div>
         </div>

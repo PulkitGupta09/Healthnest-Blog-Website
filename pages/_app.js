@@ -21,9 +21,12 @@ export default function App({ Component, pageProps }) {
         </ul>
     </header>
     <div className={styles.hamburger} onClick = {()=>{setToggle(!toggle)}}>
-        <div className={toggle ? `${styles.div} ${styles.line1c}` : `${styles.div}`}></div>
+        {/* <div className={toggle ? `${styles.div} ${styles.line1c}` : `${styles.div}`}></div>
         <div className={toggle ? `${styles.div} ${styles.line2c}` : `${styles.div}`}></div>
-        <div className= {toggle ? `${styles.div} ${styles.line3c}` : `${styles.div}`}></div>
+        <div className= {toggle ? `${styles.div} ${styles.line3c}` : `${styles.div}`}></div> */}
+        <div className={toggle ? `${styles.line1c}` : `${styles.div}`}></div>
+        <div className={toggle ? `${styles.line2c}` : `${styles.div}`}></div>
+        <div className= {toggle ? `${styles.line3c}` : `${styles.div}`}></div>
     </div>
    <Component {...pageProps} />
    <footer className={styles.footer}>
