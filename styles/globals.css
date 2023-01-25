@@ -32,8 +32,9 @@ body{
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: .05rem;
+
     /* height: 100%; */
-    /* overflow: hidden; */
+    overflow-x: hidden;
     
 
 }
