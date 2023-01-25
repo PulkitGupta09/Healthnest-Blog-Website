@@ -7,7 +7,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin = "true"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"/>
         <script src="https://kit.fontawesome.com/60577d7575.js" crossOrigin="anonymous"></script>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       <Head />
       <body>
         <Main />
